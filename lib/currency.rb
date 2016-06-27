@@ -11,6 +11,8 @@ class NaN < StandardError
 end
 
 class Currency
+  CURRENCY_CODE = {'$' => 'USD',
+            '€' => 'EURO'}
   attr_reader :value
 
   def initialize(value)
