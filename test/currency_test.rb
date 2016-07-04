@@ -23,7 +23,11 @@ class CurrencyTest < Minitest::Test
     assert_equal(Currency.new(6), Currency.new(30) / 5)
   end
 
-  def test_currency_equals
-    assert_equal(Currency.new() == Currency.new())
-  end
+  # def test_currency_equals
+  #   assert_equal Converter( Currency.new(10, :USD), :EUR ) == Currency.new(7.40, :EUR)
+  # end
+
+#   def test_currency_addition_converter
+# assert_equal Currency.new(7.7), Currency.new(1 * Converter) + 2
+#   end
 end
